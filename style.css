@@ -1,0 +1,15 @@
+:root{
+  --bg-body: #ffdab9;
+}
+
+body{
+  background-color: var(--bg-body);
+}
+
+ul{
+  list-style: none;
+}
+
+.container{
+  height: 100vh;
+}

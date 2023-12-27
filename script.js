@@ -1,15 +1,21 @@
 const spesa = [
   'pasta',
-  'carne',
-  'pomodori'
+  'pollo',
+  'spiedini',
+  'pomodori',
+  'carote',
+  'latte',
+  'yogurt',
+  'pane',
+  'nutella',
+  'mandarini'
 ];
 
-const message = document.querySelector('h1');
+const message = document.querySelector('ul');
 
 let count = 0;
 
-// ciclo do while che stampa l'elemento corrispondente all'indice attuale per poi incrementare il valore del contatore
 do{
-  message.innerHTML += spesa[count] + ' '; 
+  message.innerHTML += `<li class="mb-1">${spesa[count]}</li>`; 
   count++;
 }while(count < spesa.length);
